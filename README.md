@@ -12,15 +12,15 @@ The repository is organized into the following sections:
 
 2. **Booking CRUD Operations**  
    Provides documentation for creating, retrieving, updating, and deleting bookings using the API.  
-   - [Booking CRUD Operations Documentation](./Booking%20CRUD%20Operations/Booking%20CRUD%20Operations%20Documentation.md)
+   - [CRUD Operations Testing Documentation](./Booking%20CRUD%20Operations/CRUD%20Operations%20Testing%20Documentation.md)
 
 3. **Error Scenarios**  
    Details the various error scenarios to test how the API handles invalid inputs, unauthorized access, and other erroneous requests.  
-   - [Error Scenarios Documentation](./Error%20Scenarios/Error%20Scenarios%20Documentation.md)
+   - [Error Scenarios Testing Documentation](./Error%20Scenarios/Error%20Scenarios%20Testing%20Documentation.md)
 
 4. **Performance Tests**  
    Outlines performance testing strategies, including response times and load testing to ensure the API's reliability under various conditions.  
-   - [Performance Tests Documentation](./Performance%20Tests/Performance%20Tests%20Documentation.md)
+   - [Performance Testing Documentation](./Performance%20Tests/Performance%20Testing%20Documentation.md)
 
 ## Getting Started
 Refer to the individual documentation files for detailed instructions on setting up and executing tests for each section.
