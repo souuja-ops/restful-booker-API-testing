@@ -8,7 +8,7 @@ The repository is organized into the following sections:
 
 1. **Authentication Flow**  
    Contains documentation on testing the authentication mechanisms of the API, including token generation and validation.  
-   - [Authentication Flow Documentation](./Authentication%20Flow%20Documentation.md)
+   - [Authentication Flow Documentation](./Authentication Flow/Authentication Flow Documentation.md)
 
 2. **Booking CRUD Operations**  
    Provides documentation for creating, retrieving, updating, and deleting bookings using the API.  
