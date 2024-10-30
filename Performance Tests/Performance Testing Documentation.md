@@ -41,7 +41,7 @@ Some endpoints require a token. Here’s how to obtain it:
 
 1. Create a Test Collection in Postman specifically for performance testing.
 2. Add a request to `{{baseUrl}}/ping` or any endpoint you want to test.
-3. In the Tests tab, add the following script to assert response times:
+3. In the Scripts > Post-response tab, add the following script to assert response times:
    ```javascript
    pm.test("Response time is below 200ms", function () {
        pm.expect(pm.response.responseTime).to.be.below(200);
@@ -52,7 +52,7 @@ Some endpoints require a token. Here’s how to obtain it:
     - Go to Collection Runner and select your collection.
     - Set the number of iterations (e.g., 10 for quick tests).
     - Click Run to view response times in the results.
-    - Optional: Use Newman to automate tests:
+    - **Optional**: Use Newman to automate tests:
     ```bash
     newman run [collection-file].json
     ```
@@ -64,8 +64,8 @@ Review the response times in the Newman output.
 **Steps**:
 
 1. Create a Concurrent Requests Collection:
-    - Add a request to `{{baseUrl}}`/booking or a similar endpoint.
-    - Add the following script in the Tests tab to log each request’s response time:
+    - Add a request to `{{baseUrl}}/booking` or a similar endpoint.
+    - Add the following script in the Scripts > Post-response tab to log each request’s response time:
     ```javascript
     console.log("Response time:", pm.response.responseTime, "Status code:", pm.response.status);
     ```
@@ -84,10 +84,9 @@ Review the response times in the Newman output.
 **Steps**:
 
 1. Configure a High-Frequency Test:
-    - Use an endpoint like `{{baseUrl}}`/booking and set up a high number of requests in the Collection Runner (e.g., 100).
-2. Check Rate Limiting Headers (if applicable):
-    - Some APIs may include headers like X-RateLimit-Limit or X-RateLimit-Remaining.
-    - In the Tests tab, add a check for rate limiting headers:
+    - Use an endpoint like `{{baseUrl}}/booking` and set up a high number of requests in the Collection Runner (e.g., 100).
+2. Check Rate Limiting Headers:
+    - In the Scripts > Post-response tab, add a check for rate limiting headers:
     ```javascript
     pm.test("Check for rate limiting headers", function () {
         pm.expect(pm.response.headers.has("X-RateLimit-Limit")).to.be.true;
